@@ -1,0 +1,25 @@
+<html>
+<head>
+    <style>
+        .flex-container {
+            display: flex;
+          }
+          
+          .flex-container > div {
+            margin: 10px;
+            padding: 20px;
+            font-size: 20px;
+          }
+        </style>
+    <title>WeCare</title>
+</head>
+<body style="background-color:#ECEDED;">
+    <h1 style="text-align:center; padding-top:20px;"> Your Fitness Zone</h1>
+    <iframe style="border-radius:10px; margin-top:20px; margin-left:20px;" width="600" height="325" src="https://www.youtube.com/watch?v=_6rFRjpqobw" frameborder="0"></iframe>
+    <img id="bg" style="border-radius:10px; margin-left:20px;" width="600" height="325" src="{{ url_for('video_feed') }}">
+    <div class="flex-container">
+        <div style="margin-left:220px;">Expert Video</div>
+        <div style="margin-left:500px;">Your Video</div>
+    </div>
+</body>
+</html>
